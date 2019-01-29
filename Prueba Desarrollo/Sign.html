@@ -1,0 +1,209 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Compras</title>
+	<link rel="stylesheet" href="css\style.css">
+	<link rel="stylesheet" href="css\scroll.css">
+	<link rel="stylesheet" href="css\font-awesome.css">
+	<link rel="stylesheet" href="css\loading.css">
+	<link rel="stylesheet" href="css\log.css">
+	
+</head>
+
+<body>
+
+<header>
+	<div id="header-top">
+		<div class="contact-info">		
+			<ul class="menu-info">
+				<li><a href="#"><i class="fa fa-phone"></i>0000000000</a></li>
+				<li><a href="#"><i class="fa fa-envelope"></i>miguellangelhs@com</a></li>
+				<li><a href="#"><i class="fa fa-map-marker"></i> Colombia</a></li>
+			</ul>
+			<ul class="men-acount">		
+				<li><a class='acount_u' href='Sign.html'><i class='fa fa-user'></i> Mi cuenta </a></li>			
+			      
+			</ul>
+		</div>
+	</div>
+	<div class="head">
+		<div class="container">
+			<div class="row">				
+				<div class="header-logo">
+					<a href="index.html" class="logo">
+						<img src="img\logo.png">
+					</a>
+				</div>
+				<div class="menu">
+					<ul>
+						<li><a href="#">Inicio</a></li>
+						<li><a href="#">Producto</a></li>
+						<li><a href="#">Recientes</a></li>
+					</ul>
+				</div>
+				<div class="box-cart">									
+					<div class="conte-cart">
+						<a class="cart">
+							<i class="fa fa-shopping-cart"></i>
+							<span>Carrito</span>
+							<div class="all_cant">0</div>
+						</a>
+					</div>					
+				</div>				
+			</div>				
+		</div>
+
+	</div>
+</header>
+
+
+	<section class="main">
+	  <div class="user_options-container">
+	    <div class="user_options-text">
+	    	<!-- info for register -->
+	     	<div class="user_options-unregistered">
+	       		<h2 class="user_unregistered-title">¿No tienes cuenta?</h2>
+	        	<p class="user_unregistered-text">  </p>
+	        	<button class="user_unregistered-signup" id="signup-button">Registrar</button>
+	      	</div>
+			
+			<!-- info for login -->
+	      	<div class="user_options-registered">
+	        	<h2 class="user_registered-title">¿Ya tienes una cuenta?</h2>
+	        	<p class="user_registered-text">Ingresa a tu cuenta.</p>
+	        	<button class="user_registered-login" id="login-button">Login</button>
+	      	</div>
+
+	    </div>
+	    
+	    <!-- form login and sign up -->
+	    <div class="user_options-forms" id="user_options-forms">
+	      	<div class="user_forms-login">
+	        	<h2 class="forms_title">Iniciar Sesion</h2>
+		        <form class="forms_form" value_name="sign">
+		    	   <fieldset class="forms_fieldset">
+			            <div class="forms_field">
+			              <input id="correo_l" type="email" name="emial" pattern="[A-Za-z0-9.-@]{1,100}" placeholder="Email" class="forms_field-input" required="" autofocus="">
+			            </div>
+
+			            <div class="forms_field">
+			              <input id="pwd_l" type="password" name="pwd" pattern="[A-Za-z0-9_-]{1,100}" placeholder="Contraseña" class="forms_field-input" required="">
+			            </div>
+		          </fieldset>
+		          <div class="forms_buttons">		            	
+		            	<input id="login-send" type="submit" value="Log In" class="forms_buttons-action">
+		            	<button type="button" class="forms_buttons-forgot">¿Olvidaste tu Contraseña?</button>
+		          </div>
+
+		        </form>
+	      	</div>
+
+	      	<!-- registration forms-->
+
+	      	<div class="user_forms-signup">
+
+	       		<h2 class="forms_title">Registrarse</h2>
+
+		        <form class="forms_form" id="sign_up" value_name="sig_up" name="frmregistrar">
+		          	<fieldset class="forms_fieldset">		            
+			            <div class="forms_field">
+			              <input id="nombre" type="text" required="" autofocus="" pattern="[A-Za-z ]{1,100}" name="nombre" placeholder="Nombre" class="forms_field-input">
+			            </div>
+
+			            <div class="forms_field">
+			              <input id="direccion" required="" name="direccion" pattern="[A-Za-z0-9. -]{1,100}" type="text" placeholder="Direccion" class="forms_field-input">
+			            </div>
+
+			            <div class="forms_field">
+			              <input id="email" type="email" required="" name="email" pattern="[A-Za-z0-9.-@]{1,100}" placeholder="Email" class="forms_field-input">
+			            </div>
+		            
+			            <div class="forms_field">
+			              <input id="telefono" type="text" required="" name="telefono" pattern="[0-9]{1,9}" placeholder="Celular" maxlength="9" class="forms_field-input">
+			            </div>
+		            
+			            <div class="forms_field">
+			              <input id="pass" type="password" required="" name="pwd" pattern="[A-Za-z0-9_-]{1,100}" placeholder="Password" class="forms_field-input">
+			            </div>
+				
+		          	</fieldset>
+			          <div class="forms_buttons" style="margin-top: 10px;">
+			            <input id="registrar" type="submit" value="Registrar" class="forms_buttons-action">
+			          </div>			          
+		        </form>
+
+	      </div>
+		<div class="msj"></div>
+	    </div>
+	  </div>
+	</section>
+	
+
+<footer>	
+	<div class="container">		
+		<div class="col-3">
+			<div class="suscrip">
+				<form id="suscrib" class="suscrib-form">
+					<span>Suscríbete</span>
+					<input id="sus_email" type="email" placeholder="ejemplo@gmail.com" required="true">
+					<input type="submit" name="" value="Suscribirse">					
+					<div class="sms"></div>
+				</form>
+			</div>
+		</div>
+		<div class="col-3">
+			<div class="suscrip">
+				<form class="suscrib-form">
+					<span>Direccion</span>
+					<p>ejemplo.</p>
+				</form>
+			</div>
+		</div>
+		<div class="col-3">
+			<div class="suscrip">
+				<form class="suscrib-form">
+					<span>Sobre Nosotros</span>
+					<p>ejemplo.</p>
+				</form>
+			</div>
+		</div>		
+	</div>
+
+</footer>
+
+<!-- loading  -->
+<section id="loading">
+	<div class="wrap">
+		<div class="loader"></div>
+		<div class="loaderbefore"></div>
+		<div class="circular"></div>
+		<div class="circular another"></div>
+		<div class="text">Loading...</div>
+	</div>
+</section>
+
+<script src="js\jquery.min.js" type="text/javascript"></script>
+<script src="action.js" type="text/javascript"></script>
+<script src="js\log.js" type="text/javascript"></script>
+<script src="js\sweetAlert.js" type="text/javascript"></script>
+
+<script type="text/javascript" src="data.json"></script>
+<script type="text/javascript" src="javascrip.js"></script>
+
+<script>
+	jQuery(document).ready(function($) {
+		window.onload = function() {
+			var loading = document.getElementById('loading');
+			loading.style.visibility= 'hidden';
+			loading.style.opacity='0';
+			loading.style.display= 'none';
+		}
+	});
+</script>
+
+
+</body>
+</html>
